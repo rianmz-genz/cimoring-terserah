@@ -1,0 +1,80 @@
+# crud user
+GET http://localhost:3000/api/user
+
+###
+GET http://localhost:3000/api/user/644098d6f15e8f6834217787
+
+###
+POST http://localhost:3000/api/user/create
+Content-Type: application/json
+
+{
+  "name": "admin",
+  "email": "adrianji1945@gmail.com",
+  "password": "admin12345",
+  "role": "admin",
+  "phonenumber": "088227852900"
+}
+
+###
+DELETE  http://localhost:3000/api/user/delete/6440951f5132567922445a18
+
+###
+PUT  http://localhost:3000/api/user/update/644098d6f15e8f6834217787
+Content-Type: application/json
+
+{
+  "name": "test2",
+  "email": "test2@gmail.com",
+  "password": "1234",
+  "role": "user",
+  "phonenumber": "088227852900aja"
+}
+
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "email": "test2@gmail.com",
+  "password": "1234"
+}
+
+### productcategory 
+GET http://localhost:3000/api/productcategory
+
+###
+POST http://localhost:3000/api/productcategory/add
+Content-Type: application/json
+
+{
+  "name": "Gurih"
+}
+
+###
+PUT  http://localhost:3000/api/productcategory/update/6446a8687bfbd0230f4c1ea4
+Content-Type: application/json
+
+{
+  "name": "Pedas pisan"
+}
+
+###
+DELETE http://localhost:3000/api/productcategory/delete/6448bf82f53690f026c3115e
+
+### product
+GET http://localhost:3000/api/products
+
+###
+POST http://localhost:3000/api/products/add
+Content-Type: application/json
+
+{
+  "name": "Cimoring Test",
+  "price": 11000,
+  "stock": 10,
+  "description": "Cimoring pedasnya muantap!",
+  "image": "https://ngehe.com/public/default/img/mahe-basah-280.jpg",
+  "categories": ["6446a8687bfbd0230f4c1ea4", "6446a9497bfbd0230f4c1ea7"]
+}
+
