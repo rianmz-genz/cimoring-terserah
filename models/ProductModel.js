@@ -1,7 +1,11 @@
 import { Schema, model, models } from "mongoose";
 
 const productSchema = new Schema({
-    name: {
+      name: {
+        type: String,
+        required: true,
+      },
+      path: {
         type: String,
         required: true,
       },
@@ -17,10 +21,11 @@ const productSchema = new Schema({
         type: String,
         required: true,
       },
-     image: {
+      notes: String,
+      image: [{
         type: String,
         required: true,
-      },
+      }],
       categories: [
         {
           type: Schema.Types.ObjectId,

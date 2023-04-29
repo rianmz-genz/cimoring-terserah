@@ -37,7 +37,7 @@ const LoginPage = () => {
           <p>Email atau password salah!</p>
         </div>
         <div className='flex justify-center items-center space-x-3'>
-          <Image src={"/images/Logo.png"} alt='Logo' width={80} height={80} className='rounded-full' />
+          <Image src={"/images/Logo.jpg"} alt='Logo' width={80} height={80} className='rounded-full' />
           <div>
             <Text value={"Selamat Datang"} size={"text-3xl text-white font-bold"} />
              <Text value={"Di Cimoring Terserah"} size={"text-3xl text-white font-bold"} />

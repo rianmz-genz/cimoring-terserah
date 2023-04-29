@@ -6,7 +6,7 @@ const NavLinkAdmin = ({href, value, icon}) => {
     const router = useRouter()
     const currentPage = router.pathname
   return (
-    <Link href={href} className={`${href == currentPage ? "text-white font-bold" : "text-white/90"} flex text-xl items-center `}>{icon} {value}</Link>
+    <Link href={href} className={`${href == currentPage ? "text-black font-semibold" : "text-black/90"} flex text-base items-center `}>{icon} {value}</Link>
   )
 }
 

@@ -27,6 +27,9 @@ export const registerApi = async(email, password, name, phone ) => {
             "Content-Type": "application/json"
         }
     })
+    if(res.data.success == false){
+        return false;
+    }
     return res.data.data
 }
 export const getAllUser = async () => {

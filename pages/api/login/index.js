@@ -18,7 +18,7 @@ export default async function getUsers(req, res){
               {email, password}
             );
             if (!user) {
-              return res.status(200).json({ success: false, message: "Anda bukan user!" });
+              return res.status(200).json({ success: false, message: "Email atau kata sandi salah!" });
             }
             res.status(200).json({ success: true, data: user });
           } catch (error) {

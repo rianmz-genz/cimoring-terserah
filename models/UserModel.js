@@ -13,7 +13,11 @@ const userSchema = new Schema({
         required: true,
         unique: true,
     },
-    password: String
+    password: String,
+    cart:{
+        type: Schema.Types.ObjectId,
+        ref: 'Cart',
+      },
 }) 
 
 const User = models.User || model('User', userSchema)

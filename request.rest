@@ -5,15 +5,15 @@ GET http://localhost:3000/api/user
 GET http://localhost:3000/api/user/644098d6f15e8f6834217787
 
 ###
-POST http://localhost:3000/api/user/create
+POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
   "name": "admin",
-  "email": "adrianji1945@gmail.com",
+  "email": "adrianji19456@gmail.com",
   "password": "admin12345",
   "role": "admin",
-  "phonenumber": "088227852900"
+  "phonenumber": "0882278529006"
 }
 
 ###
@@ -36,8 +36,8 @@ POST http://localhost:3000/api/login
 Content-Type: application/json
 
 {
-  "email": "test2@gmail.com",
-  "password": "1234"
+  "email": "afiyata@gmail.com",
+  "password": "12345"
 }
 
 ### productcategory 
@@ -48,7 +48,7 @@ POST http://localhost:3000/api/productcategory/add
 Content-Type: application/json
 
 {
-  "name": "Gurih"
+  "name": "Pedas"
 }
 
 ###
@@ -78,3 +78,15 @@ Content-Type: application/json
   "categories": ["6446a8687bfbd0230f4c1ea4", "6446a9497bfbd0230f4c1ea7"]
 }
 
+###
+PUT http://localhost:3000/api/products/update/6448ac12f53690f026c31157
+Content-Type: application/json
+
+{
+  "name": "Cimoring Super Pedas",
+  "price": 10000,
+  "stock": 10,
+  "description": "Cimoring Pedasnya Polllll!",
+  "image": "https://ngehe.com/public/default/img/mahe-basah-280.jpg",
+  "categories": ["6446a8687bfbd0230f4c1ea4", "6446a9497bfbd0230f4c1ea7"]
+}

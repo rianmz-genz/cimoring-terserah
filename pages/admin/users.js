@@ -1,7 +1,7 @@
 import { editUserApi, getAllUser, getUser } from '@/api/api'
 import { Input, PageAdmin, Text } from '@/components'
 import React, { useEffect, useState } from 'react'
-import { AiOutlineDelete, AiOutlineUserAdd } from 'react-icons/ai'
+import { AiOutlineDelete, AiOutlineLoading3Quarters, AiOutlineUserAdd } from 'react-icons/ai'
 import { FiX } from 'react-icons/fi'
 import {RiEditCircleLine} from 'react-icons/ri'
 const AdminUsers = () => {
@@ -90,7 +90,7 @@ const AdminUsers = () => {
             </tr>
           </thead>
           <tbody>
-            {users.map((user, i)=> (
+            { users.map((user, i)=> (
               <tr
                 key={i}
                 className="transition duration-300 ease-in-out hover:bg-white/5">
@@ -104,7 +104,8 @@ const AdminUsers = () => {
                   <RiEditCircleLine onClick={()=> edit(user._id)} title='Ubah user' className='text-xl text-indigo-400 cursor-pointer' />
                 </td>
               </tr>
-            ))}
+            )) 
+            }
           </tbody>
         </table>
     </PageAdmin>
