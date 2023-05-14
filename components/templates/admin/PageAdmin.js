@@ -15,7 +15,7 @@ const PageAdmin = ({children, title}) => {
     <main className='w-full flex min-h-screen justify-between text-black font-poppins'>
       <aside className='w-full max-w-[300px] border-r border-black/10 min-h-screen flex flex-col px-16 py-12 space-y-4'>
         <div className='w-full border-b border-black/10 flex justify-center items-center pt-6 pb-3 flex-col'>
-        <Image src={"/images/Logo.jpg"} alt='Logo' height={100} width={100} className='rounded-full mb-3' />
+        <Image src={"/images/Logo.jpg"} alt='Logo' height={1080} width={1080} className='rounded-full mb-3 w-8/12' />
         </div>  
         <NavLinkAdmin 
           value={"Dashboard"}

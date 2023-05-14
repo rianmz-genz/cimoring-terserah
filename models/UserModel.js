@@ -8,16 +8,11 @@ const userSchema = new Schema({
         required: true
     },
     role: String,
-    phonenumber: {
-        type: String,
-        required: true,
-        unique: true,
-    },
     password: String,
-    cart:{
-        type: Schema.Types.ObjectId,
-        ref: 'Cart',
-      },
+    token: {
+        type: String,
+        require: true
+    }
 }) 
 
 const User = models.User || model('User', userSchema)

@@ -45,7 +45,7 @@ const Login = () => {
         <link rel="shortcut icon" href="/images/Logo.jpg" />
     </Head>
     <Loader indicator={isLoading}/>
-    <main className='w-full min-h-screen flex flex-col items-center py-6'>
+    <main className='w-full min-h-screen flex flex-col items-center py-6 sm:w-11/12'>
       <Alert 
         indicator={isWrong}
         onClick={()=> setIsWrong(false)}

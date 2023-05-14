@@ -165,13 +165,6 @@ const Register = () => {
             title={"Nama*"}
             value={name}
           />
-          <Input 
-            id={"phone"}
-            onChange={(e)=> setPhone(e.target.value)}
-            placeholder={"Masukan nomor telepon anda"}
-            title={"Nomor Telepon*"}
-            value={phone}
-          />
           <InputPassword 
             id={"password"}
             onChange={(e)=> setPassword(e.target.value)}
@@ -201,7 +194,6 @@ const Register = () => {
           />
           <button type='submit' disabled={ email.length == 0 || 
             name.length == 0 ||
-            phone.length == 0 ||
             password.length == 0 ||
             confirmPassword.length == 0 ||
             token != tokenGenerated ? true : false
@@ -209,7 +201,6 @@ const Register = () => {
             className={`${
             email.length == 0 || 
             name.length == 0 ||
-            phone.length == 0 ||
             password.length == 0 ||
             confirmPassword.length == 0 ||
             token != tokenGenerated ? "bg-green-400/60" : "bg-green-400"

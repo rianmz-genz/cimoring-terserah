@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Cimoring Terserah : Jual Aneka Snack Murah Dan Berkualitas.</title>
+      <title>Cimoring Terserah: Jual Aneka Snack Murah Dan Berkualitas.</title>
       <link rel="shortcut icon" href="/images/Logo.jpg" />
       <link rel="cannonical" href="https://cimoringterserah.com" />
       <meta name="description" content="Cimoring Terserah menjual aneka snack murah dan berkualitas, kalo kamu bingung pake aja fitur `Terserah Kamu!` nanti bakalan dipilihin snack yang sesuai dengan seleramu!" data-react-helmet="true" />
-      <meta property="og:title" content="Cimoring Terserah : Jual Aneka Snack Murah Dan Berkualitass" />
+      <meta property="og:title" content="Cimoring Terserah: Jual Aneka Snack Murah Dan Berkualitass" />
       <meta property="og:locale" content="id_ID" />
       <meta property="og:type" content="website"/>
       <meta property="og:description" content="Cimoring Terserah menjual aneka snack murah dan berkualitas, kalo kamu bingung pake aja fitur `Terserah Kamu!` nanti bakalan dipilihin snack yang sesuai dengan seleramu!" />
@@ -26,7 +26,7 @@ export default function Home() {
         <header className="max-w-[300px] w-full border-r h-screen scrollbar overflow-y-scroll fixed flex justify-center  px-16 py-24">
           <nav className="w-full flex flex-col space-y-16 min-h-screen ">
             {/* Image header */}
-            <Image priority src={contentData.home.headerImageUrl} width={173} className="w-11/12" height={100} alt="Logo Cimoring Terserah dengan slogan" />
+            <Image priority src={contentData.home.headerImageUrl} width={1080} className="w-full" height={1080} alt="Logo Cimoring Terserah dengan slogan" />
             {/* nav icon */}
             <div className="flex w-10/12 space-x-8">
               <Link href={"/"} className="relative">

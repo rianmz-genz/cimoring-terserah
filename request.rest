@@ -9,11 +9,11 @@ POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
-  "name": "admin",
-  "email": "adrianji19456@gmail.com",
-  "password": "admin12345",
-  "role": "admin",
-  "phonenumber": "0882278529006"
+  "name": "Vinka",
+  "email": "vinkaafiyata@gmail.com",
+  "password": "123",
+  "role": "user",
+  "phonenumber": "089878712979"
 }
 
 ###
@@ -66,27 +66,50 @@ DELETE http://localhost:3000/api/productcategory/delete/6448bf82f53690f026c3115e
 GET http://localhost:3000/api/products
 
 ###
+GET http://localhost:3000/api/products/boci-cuanki
+
+###
 POST http://localhost:3000/api/products/add
 Content-Type: application/json
 
 {
-  "name": "Cimoring Test",
+  "name": "Cimoring Pedas",
   "price": 11000,
   "stock": 10,
+  "path": "cimoring-pedas",
+  "notes": "",
   "description": "Cimoring pedasnya muantap!",
-  "image": "https://ngehe.com/public/default/img/mahe-basah-280.jpg",
-  "categories": ["6446a8687bfbd0230f4c1ea4", "6446a9497bfbd0230f4c1ea7"]
+  "images": ["https://drive.google.com/uc?export=view&id=1z-0WojPC-lgxfF5AEjiI_yTRTz0PVFtS","https://drive.google.com/uc?export=view&id=1omCnzOjh2Okvo9LznHbDSjU7seDTFsWW"],
+  "categories": ["644d391cfb2bef2a6cf7697f"]
 }
 
 ###
-PUT http://localhost:3000/api/products/update/6448ac12f53690f026c31157
+PUT http://localhost:3000/api/products/update/644d3d93fb2bef2a6cf76983
 Content-Type: application/json
 
 {
-  "name": "Cimoring Super Pedas",
-  "price": 10000,
+  "name": "Boci Cuanki",
+  "price": 11000,
   "stock": 10,
-  "description": "Cimoring Pedasnya Polllll!",
-  "image": "https://ngehe.com/public/default/img/mahe-basah-280.jpg",
-  "categories": ["6446a8687bfbd0230f4c1ea4", "6446a9497bfbd0230f4c1ea7"]
+  "path": "boci-cuanki",
+  "notes": "*Produk dibuat berdasarkan pesanan. Masa ketahanan produk setelah diterima: 30 hari.",
+  "description": "Boci cuanki alias baso aci yang kriuknya dan kuahnya bikin mau lagi. Enak dikonsumsi tanpa bumbu atau dengan bumbu pilihan dan level kepedasan.",
+  "images": ["https://drive.google.com/uc?export=view&id=1z-0WojPC-lgxfF5AEjiI_yTRTz0PVFtS","https://drive.google.com/uc?export=view&id=1omCnzOjh2Okvo9LznHbDSjU7seDTFsWW"],
+  "categories": ["644d391cfb2bef2a6cf7697f"]
+}
+
+###
+POST http://localhost:3001/api/cart/add
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "product": "644d3d93fb2bef2a6cf76983",
+      "qty": 2
+    }
+  ],
+  "totalQty": 2,
+  "totalRp": 22000,
+  "user": "645f9c7609978b052253b8ec"
 }

@@ -1,6 +1,6 @@
 const contentData = {
     home: {
-        headerImageUrl: "/images/LogoWithSlogan.svg",
+        headerImageUrl: "/images/LogoWithSlogan.png",
         navText: [
             {
                 path: "/",

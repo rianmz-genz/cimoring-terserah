@@ -93,3 +93,14 @@ export const getProductCategories = async () => {
     })
     return res.data.data
 }
+
+export const getOneProduct = async (path) => {
+    const res = await axios({
+        method: "GET",
+        baseURL: `${domain}/api/products/${path}`,
+        headers:{
+            "Content-Type": "application/json"
+        }
+    })
+    return res.data.data
+}
